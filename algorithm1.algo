@@ -1,0 +1,14 @@
+ALGORITHM dot_product
+VAR 
+    v1, v2 : ARRAY[1..3] OF INTEGER;
+    product : INTEGER:=0;
+BEGIN
+    FOR i := 1 to n do
+       product :=product + a[i] * b[i];
+    END_FOR;
+    IF (product === 0) THEN
+        RETURN 0;
+    ELSE    
+        RETURN product;
+    END_IF;
+END;
